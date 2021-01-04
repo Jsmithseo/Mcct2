@@ -1,65 +1,56 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from "react";
+import BaseLayout from "../components/layouts/BaseLayout";
+import { Container, Row, Col, Button } from "reactstrap";
+import Typed from "react-typed";
+import { useGetUser } from "@/actions/user";
 
-export default function Home() {
+
+const ROLES = [
+  "College",
+  "Career",
+  "Readiness",
+  "Crisis Care",
+  "Educational",
+  "Family",
+  "Mental Health",
+  "Wellness",
+  "Senior",
+  "Disability",
+];
+
+const Index = () => {
+  const { data, error, loading } = useGetUser();
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <BaseLayout user={data} loading={loading} className="cover">
+      <div className="main-section">
+        <Container>
+          <Row>
+          <Col md="5" className="hero-welcome-wrapper d-flex justify-content-end">
+             <img className="mx-5 justify-content-end" src="/images/device2.png" />
+            </Col>
+            <Col md="7" className="hero-welcome-wrapper d-flex align-items-center justify-content-start">
+              <div className="hero-welcome-main">
+              <div className="hero-welcome-text">
+                  <h1 className="display-4 text-white">
+                    Marin County CO-OP Teams
+                  </h1>
+                  <p className="lead text-white font-weight-light"> <span>We're here for your <Typed loop strings={ROLES} typeSpeed={50} backSpeed={80} backDelay={3000} loopCout={0} showCursor className="self-typed" cursorChar="|"></Typed> Needs </span>
+                  <br></br>Dedicated to providing comprehensive support services <br></br><span className="h3">Strengthening Community</span>
+                </p>
+              </div>
+              <Button color="primary" size="lg">Get Help Today</Button>{' '}
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+              <div className="hero-welcome-bio">
+                <p className="mb-2 text-white">* only availible to downlad via chrome browser</p>
+              </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </BaseLayout>
+  );
+};
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
-}
+export default Index;
