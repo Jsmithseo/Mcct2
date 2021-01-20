@@ -1,7 +1,7 @@
 import React from "react";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import BasePage from "@/components/BasePage";
-import { useGetUser } from "@/actions/user";
+import  useGetUser  from "@/actions/user";
 
 const Donate = () => {
   const { data, error, loading } = useGetUser();

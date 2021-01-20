@@ -7,7 +7,6 @@ import { useGetPortfolio } from '@/actions/portfolios'
 const PortfolioEdit = ({user}) => {
   const router = useRouter();
   const { data } = useGetPortfolio(router.query.id);
-  debugger
   return (
     <BaseLayout user={user} loading={false}>
       <BasePage header="Portfolio Edit">
