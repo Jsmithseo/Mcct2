@@ -57,6 +57,13 @@ const AdminMenu = () => {
         <DropdownItem>
           <BsNavLink
             className="port-dropdown-item"
+            href="/portfolios"
+            title="View Portfolios"
+          />
+        </DropdownItem>
+        <DropdownItem>
+          <BsNavLink
+            className="port-dropdown-item"
             href="/portfolios/new"
             title="Create Portfolio"
           />
@@ -65,16 +72,16 @@ const AdminMenu = () => {
           <BsNavLink
             className="port-dropdown-item"
             href="/blogs/editor"
-            title="Blog Editor"
+            title="Draft Blog"
           />
         </DropdownItem>
-        <DropdownItem>
+        {/* <DropdownItem>
           <BsNavLink
             className="port-dropdown-item"
             href="/dashboard"
             title="Dashboard"
           />
-        </DropdownItem>
+        </DropdownItem> */}
       </DropdownMenu>
     </Dropdown>
   );

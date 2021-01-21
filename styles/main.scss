@@ -37,7 +37,7 @@ body {
 // Components
 @import "./components/header";
 
-@import './portfolios';
+@import "./portfolios";
 
 html,
 body {
@@ -57,7 +57,6 @@ body {
 }
 
 .base-page {
-
   padding: 150px 0;
   color: #000;
   background-color: #ecedee;
@@ -67,15 +66,8 @@ body {
     font-weight: bold;
     display: inline-block;
     margin-bottom: 20px;
-  
   }
-  
 }
-
-
-
-
-
 
 .btn-primary {
   background-color: #3d88cb;
