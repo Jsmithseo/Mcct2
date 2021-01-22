@@ -12,6 +12,10 @@ export default initAuth0({
     cookieSecret: process.env.AUTH0_COOKIE_SECRET,
     storeAccessToken: true,
   },
+  overrides: {
+  	__tenant: config.auth0Tenant,
+  	__token_issuer: config.authorizationServer.issuer
+  },
 });
 
 export const isAuthorized = (user, role) => {
