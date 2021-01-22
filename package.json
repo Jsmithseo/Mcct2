@@ -2,10 +2,13 @@
   "name": "co-op-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "11.12.x"
+  },
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js",
+    "start": "",
     "prettier": "prettier --write ."
   },
   "dependencies": {
