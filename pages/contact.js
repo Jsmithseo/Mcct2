@@ -2,10 +2,6 @@ import React from "react";
 import { useGetUser } from "@/actions/user";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import BasePage from "@/components/BasePage";
-<<<<<<< HEAD
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-
-=======
 import {
   Button,
   Form,
@@ -16,7 +12,6 @@ import {
   Row,
   Col,
 } from "reactstrap";
->>>>>>> 6223d51c460098da133d6d013db99361bd63283d
 
 const Contact = () => {
   const { data, loading } = useGetUser();
@@ -50,10 +45,6 @@ const Contact = () => {
             </FormGroup>
             <Button>Submit </Button>
           </Form>
-<<<<<<< HEAD
-
-=======
->>>>>>> 6223d51c460098da133d6d013db99361bd63283d
         </BasePage>
       </BaseLayout>
     </>
