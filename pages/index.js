@@ -42,7 +42,7 @@ const Index = () => {
 
 
               <div className="hero-welcome-bio">
-                <p className="mb-2 text-white">* only availible to downlad via chrome browser</p>
+                <p className="mb-2 text-white">* *only availible to downlad via chrome browser</p>
               </div>
               </div>
             </Col>
