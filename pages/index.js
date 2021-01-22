@@ -4,7 +4,6 @@ import { Container, Row, Col, Button } from "reactstrap";
 import Typed from "react-typed";
 import { useGetUser } from "@/actions/user";
 
-
 const ROLES = [
   "College",
   "Career",
@@ -25,12 +24,20 @@ const Index = () => {
       <div className="main-section">
         <Container>
           <Row>
-          <Col md="5" className="hero-welcome-wrapper d-flex justify-content-end">
-             <img className="mx-5 justify-content-end" src="/images/device2.png" />
+            <Col
+              md="5"
+              className="hero-welcome-wrapper d-flex justify-content-end"
+            >
+              <img
+                className="mx-5 justify-content-end"
+                src="/images/device2.png"
+              />
             </Col>
-            <Col md="7" className="hero-welcome-wrapper d-flex align-items-center justify-content-start">
+            <Col
+              md="7"
+              className="hero-welcome-wrapper d-flex align-items-center justify-content-start">
               <div className="hero-welcome-main">
-              <div className="hero-welcome-text">
+                <div className="hero-welcome-text">
                   <h1 className="display-4 text-white">
                     Marin County CO-OP Teams
                   </h1>
@@ -44,11 +51,11 @@ const Index = () => {
               <div className="hero-welcome-bio">
                 <p className="mb-2 text-white">* *only availible to downlad via chrome browser</p>
               </div>
-              </div>
+                  </div>
             </Col>
           </Row>
         </Container>
-      </div>
+        </div>
     </BaseLayout>
   );
 };

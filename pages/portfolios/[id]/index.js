@@ -1,4 +1,3 @@
-
 import BaseLayout from '@/components/layouts/BaseLayout';
 import BasePage from '@/components/BasePage';
 import { useGetUser } from '@/actions/user';
@@ -18,11 +17,22 @@ const Portfolio = ({portfolio}) => {
   )
 }
 
-export async function getServerSideProps({query}) {
-  const json = await new PortfolioApi().getById(query.id);
-  const portfolio = json.data;
+export async function getStaticPaths() {
+  const json = await new PortfolioApi().getAll();
+  const portfolios = json.data;
+  const paths = portfolios.map(portfolio => {
+    return {
+      params: {id: portfolio._id}
+    }
+  })
 
-  return {props: { portfolio }};
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({params}) {
+  const json = await new PortfolioApi().getById(params.id);
+  const portfolio = json.data;
+  return { props: {portfolio}};
 }
 
 export default Portfolio;
