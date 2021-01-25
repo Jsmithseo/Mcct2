@@ -17,7 +17,7 @@ const Portfolio = ({portfolio}) => {
   )
 }
 
-export async function getStaticPaths() {
+export async function getServerSidePaths() {
   const json = await new PortfolioApi().getAll();
   const portfolios = json.data;
   const paths = portfolios.map(portfolio => {
@@ -29,7 +29,7 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export async function getStaticProps({params}) {
+export async function getServerSideProps({params}) {
   const json = await new PortfolioApi().getById(params.id);
   const portfolio = json.data;
   return { props: {portfolio}};
