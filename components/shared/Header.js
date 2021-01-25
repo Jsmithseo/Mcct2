@@ -91,13 +91,15 @@ const Header = ({ user, loading, className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
+  const menuOpenClass = isOpen ? 'menu-open' : 'menu-close';
+  
   return (
     <ReactResizeDetector handleWidth>
       {({ width }) => (
         <Navbar
-          className={`port-navbar port-default ${className} ${
+          className={`port-navbar port-default ${className}  ${
             width < 768 && isOpen ? "is-open" : "is-close"
-          }`}
+          } ${menuOpenClass}`}
           dark
           expand="md"
         >
