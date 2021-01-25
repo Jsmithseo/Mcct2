@@ -114,6 +114,9 @@ const Header = ({ user, loading, className }) => {
                 <BsNavLink href="/leadership" title="leadership" />
               </NavItem>
               <NavItem className="port-navbar-item">
+                <BsNavLink href="/teams" title="teams" />
+              </NavItem>
+              <NavItem className="port-navbar-item">
                 <BsNavLink href="/contact" title="contact" />
               </NavItem>
               {/* <NavItem className="port-navbar-item">

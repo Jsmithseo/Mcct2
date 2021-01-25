@@ -34,7 +34,7 @@ const Teams = () => {
 
 The team also provides a variety of career-related assistance, including the following: career counseling; career and interest assessments; job search assistance (including help with job applications, interviewing, resumes, cover letters, etc.); and current labor-market information (including job outlook, current demand, and average wages). 
                 </CardText>
-                <Button>Button</Button>
+                <Button>Contact Now</Button>
               </CardBody>
             </Card>
             <Card>
@@ -97,9 +97,6 @@ The team also supports the special needs of young families with infants, toddler
               /> */}
               <CardBody>
                 <CardTitle tag="h5">Mental Health and Wellness Team</CardTitle>
-                <CardSubtitle tag="h6" className="mb-2 text-muted">
-                  Card subtitle
-                </CardSubtitle>
                 <CardText>
                 The Mental Health and Wellness Team is made up of licensed professionals. Team member help equip individuals with mindfulness strategies by providing reading materials, virtual lead meditation, and one-on-one mental health counseling. The team coordinates tasks designated to ensure care coordination, treatment and follow-up care for individuals dealing with mental health issues. 
 Upon initial contact with an individual, the team leader refers them to an appropriate team member or the community mental health agency for further assistance. Hotlines for mental health resources and interventions are also available. 
