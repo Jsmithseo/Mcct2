@@ -15,7 +15,6 @@ const About = () => {
         
         <Container>
   
-        <Alert color="dark">
         <Row className="crisis_callout">
         <Col md="10">
         <h3>Crisis Care Team</h3>
@@ -25,7 +24,6 @@ const About = () => {
         <Button href="tel:+15109562978" color="primary" size="lg">Call Now</Button>
         </Col>
         </Row> 
-        </Alert>
     
         <Row className="hero">
         <Col sm="12" >

@@ -39,9 +39,8 @@
         color: #dba919;
       }
     }
-  }
 
-<<<<<<< HEAD
+
   .port-navbar {
     &-brand {
       color: white;
@@ -61,7 +60,6 @@
       
       letter-spacing: 0.8px;
       text-transform: uppercase;
-=======
   .port-dropdown-menu {
     .dropdown-item:active {
       background-color: #f5f5f5;
@@ -69,7 +67,6 @@
 
     .port-dropdown-item {
       color: #4e4e4e;
->>>>>>> refs/remotes/origin/main
 
       &.active {
         color: #dba919;
@@ -92,8 +89,6 @@
     position: relative;
   }
 }
-<<<<<<< HEAD
-=======
 
 a.nav-link.port-navbar-link.port-dropdown-item {
   color: black !important;
@@ -107,4 +102,6 @@ h1.display-4.text-white {
 .port-navbar.port-default {
   background-color: #285476;
 }
->>>>>>> refs/remotes/origin/main
+  }
+}
+}
