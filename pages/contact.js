@@ -8,7 +8,6 @@ import {
   FormGroup,
   Label,
   Input,
-  FormText,
   Row,
   Col,
   FormFeedback
@@ -21,31 +20,17 @@ const Contact = () => {
     <>
       <BaseLayout user={data} loading={loading}>
         <BasePage>
-          <Row>
+        <Row>
             <Col md="6">
-              <h3><a href="tel:+15109562978">510 956 2978</a></h3>
-              <h3><a href="mailto:mcct@smcsd.org">mcct@smcsd.org</a></h3>
-              <h3>Marin City, CA 94965</h3>
+          <h3>(919) 771-7412</h3>
+          <h3>mcct@smcsd.org</h3>
+          <h3>Marin City, CA 94965</h3>
             </Col>
 
-          <Col md="6"> 
+
+        </Row>
           <Form>
-            <Row form>
-            <Col md="6">
-              <FormGroup>
-                <Label>First Name</Label>
-                <Input type="first name" name="firstName" id="firstName" placeholder="Joan" />
-                <FormFeedback>Oh noes! that name is already taken</FormFeedback>
-              </FormGroup>
-            </Col>
-            <Col md="6">
-              <FormGroup>
-                <Label>Last Name</Label>
-                <Input type="last name" name="lastName" id="lastName" placeholder="Smith" />
-              </FormGroup>  
-            </Col>
-            </Row>
-
+            <h4>Fake Form </h4>
             <FormGroup>
               <Label>Email</Label>
               <Input type="email" name="email" id="Email" placeholder="Email Address" />

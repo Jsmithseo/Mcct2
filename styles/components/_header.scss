@@ -1,8 +1,14 @@
+
 // HEADER
 .port-navbar.port-default {
   width: 100%;
+  max-width: 1440px;
+  margin: auto;
   z-index: 15;
-  padding: 40px;
+  padding: 20px 20px;
+  position: absolute;
+
+
 
   .port-navbar {
     &-brand {
@@ -10,6 +16,7 @@
       font-size: 24px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      
     }
 
     &-item {
@@ -19,6 +26,7 @@
 
     &-link {
       color: white;
+      
       letter-spacing: 0.8px;
       text-transform: uppercase;
 
@@ -32,16 +40,8 @@
       }
     }
   }
-}
 
-// HEADER
-.port-navbar.port-default {
-  width: 100%;
-  max-width: 1440px;
-  margin: auto;
-  z-index: 15;
-  padding: 20px 40px;
-
+<<<<<<< HEAD
   .port-navbar {
     &-brand {
       color: white;
@@ -61,15 +61,25 @@
       
       letter-spacing: 0.8px;
       text-transform: uppercase;
+=======
+  .port-dropdown-menu {
+    .dropdown-item:active {
+      background-color: #f5f5f5;
+    }
+
+    .port-dropdown-item {
+      color: #4e4e4e;
+>>>>>>> refs/remotes/origin/main
 
       &.active {
         color: #dba919;
       }
+    }
 
-      &:hover,
-      &:focus {
-        color: #dba919;
-      }
+    .port-dropdown-toggle {
+      color: white;
+      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 }
@@ -82,3 +92,19 @@
     position: relative;
   }
 }
+<<<<<<< HEAD
+=======
+
+a.nav-link.port-navbar-link.port-dropdown-item {
+  color: black !important;
+}
+
+
+h1.display-4.text-white {
+  padding-top: 50px!important;
+}
+
+.port-navbar.port-default {
+  background-color: #285476;
+}
+>>>>>>> refs/remotes/origin/main

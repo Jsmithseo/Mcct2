@@ -1,8 +1,9 @@
 import React from "react";
-import { Alert, Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import BaseLayout from "../components/layouts/BaseLayout";
 import BasePage from "../components/BasePage";
 import { useGetUser } from "@/actions/user";
+
 
 const About = () => {
   const { data, loading } = useGetUser();
