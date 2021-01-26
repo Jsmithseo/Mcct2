@@ -48,6 +48,7 @@
       font-size: 24px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      
     }
 
     &-item {
@@ -57,7 +58,7 @@
 
     &-link {
       color: white;
-
+      
       letter-spacing: 0.8px;
       text-transform: uppercase;
 
@@ -80,8 +81,4 @@
     justify-content: space-around;
     position: relative;
   }
-}
-
-a.nav-link.port-navbar-link.port-dropdown-item {
-  color: black !important;
 }

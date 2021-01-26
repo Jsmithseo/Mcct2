@@ -37,7 +37,7 @@ body {
 // Components
 @import "./components/header";
 
-@import "./portfolios";
+@import './portfolios';
 
 html,
 body {
@@ -57,7 +57,8 @@ body {
 }
 
 .base-page {
-  padding: 150px 0;
+
+  padding: 60px 0;
   color: #000;
   background-color: #ecedee;
   min-height: 100vh;
@@ -66,8 +67,15 @@ body {
     font-weight: bold;
     display: inline-block;
     margin-bottom: 20px;
+  
   }
+  
 }
+
+
+
+
+
 
 .btn-primary {
   background-color: #3d88cb;
@@ -132,4 +140,43 @@ body {
 
 .port-navbar.transparent.is-close {
   transition: 1s;
+}
+.crisis_callout{
+  align-items: center;
+}
+.last_call {
+  margin: 40px auto;
+  padding: 20px;
+}
+.hero{
+  h1{
+    margin-top: 30px;
+  }
+}
+.vision{
+  margin: 60px auto;
+}
+.teams{
+  background-color: #8eb6dc;
+  padding: 2em 1em;
+  border-radius: .25em;
+  img{
+    max-width: 100%;
+  }
+  .teamRow{
+    margin: 40px auto;
+    align-items: center;
+  }
+  @media (max-width: 768px){
+    .imgCol{
+      order: 1;
+    }
+    .textCol{
+      order: 2;
+    }
+    .teamRow{
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
