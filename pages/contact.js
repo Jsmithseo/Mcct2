@@ -10,7 +10,8 @@ import {
   Input,
   Row,
   Col,
-  FormFeedback
+  FormFeedback,
+  Container
 } from "reactstrap";
 
 const Contact = () => {
@@ -20,7 +21,10 @@ const Contact = () => {
     <>
       <BaseLayout user={data} loading={loading}>
         <BasePage>
-          <Row>
+      <Container>
+
+
+      <Row>
             <Col md="6">
               <h3><a href="tel:+15109562978">510 956 2978</a></h3>
               <h3><a href="mailto:mcct@smcsd.org">mcct@smcsd.org</a></h3>
@@ -61,6 +65,8 @@ const Contact = () => {
           </Form>
           </Col>
           </Row>
+
+      </Container>
 
         </BasePage>
       </BaseLayout>
