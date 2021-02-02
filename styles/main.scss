@@ -37,7 +37,7 @@ body {
 // Components
 @import "./components/header";
 
-@import './portfolios';
+@import "./portfolios";
 
 html,
 body {
@@ -57,7 +57,6 @@ body {
 }
 
 .base-page {
-
   padding: 60px 0;
   color: #000;
   background-color: #ecedee;
@@ -67,17 +66,12 @@ body {
     font-weight: bold;
     display: inline-block;
     margin-bottom: 20px;
-  
   }
-  
 }
 
 .container {
-  padding-top: 50px; 
+  padding-top: 50px;
 }
-
-
-
 
 .btn-primary {
   background-color: #3d88cb;
@@ -143,55 +137,51 @@ body {
 .port-navbar.transparent.is-close {
   transition: 1s;
 }
-.crisis_callout{
+.crisis_callout {
   align-items: center;
 }
 .last_call {
   margin: 40px auto;
   padding: 20px;
 }
-.hero{
-  h1{
+.hero {
+  h1 {
     margin-top: 30px;
   }
 }
-.vision{
+.vision {
   margin: 60px auto;
 }
-.teams{
+.teams {
   background-color: #8eb6dc;
   padding: 2em 1em;
-  border-radius: .25em;
-  img{
+  border-radius: 0.25em;
+  img {
     max-width: 100%;
   }
-  .teamRow{
+  .teamRow {
     margin: 40px auto;
     align-items: center;
   }
-  @media (max-width: 768px){
-    .imgCol{
+  @media (max-width: 768px) {
+    .imgCol {
       order: 1;
     }
-    .textCol{
+    .textCol {
       order: 2;
     }
-    .teamRow{
+    .teamRow {
       display: flex;
       flex-direction: column;
     }
   }
 }
 
-
-
 @media only screen and (max-width: 768px) {
   .hero-welcome-wrapper.d-flex.justify-content-end.col-md-5 {
-    display:none!important;
+    display: none !important;
   }
   .main-section {
     padding-top: 50px;
   }
 }
-
-

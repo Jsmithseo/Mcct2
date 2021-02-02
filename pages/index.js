@@ -35,27 +35,48 @@ const Index = () => {
             </Col>
             <Col
               md="7"
-              className="hero-welcome-wrapper d-flex align-items-center justify-content-start">
+              className="hero-welcome-wrapper d-flex align-items-center justify-content-start"
+            >
               <div className="hero-welcome-main">
                 <div className="hero-welcome-text">
                   <h1 className="display-4 text-white">
                     Marin County CO-OP Teams
                   </h1>
-                  <p className="lead text-white font-weight-light"> <span>We're here for your <Typed loop strings={ROLES} typeSpeed={50} backSpeed={80} backDelay={3000} loopCout={0} showCursor className="self-typed" cursorChar="|"></Typed> Needs </span>
-                  <br></br>Dedicated to providing comprehensive support services <br></br><span className="h3">Strengthening Community</span>
-                </p>
+                  <p className="lead text-white font-weight-light">
+                    {" "}
+                    <span>
+                      We're here for your{" "}
+                      <Typed
+                        loop
+                        strings={ROLES}
+                        typeSpeed={50}
+                        backSpeed={80}
+                        backDelay={3000}
+                        loopCout={0}
+                        showCursor
+                        className="self-typed"
+                        cursorChar="|"
+                      ></Typed>{" "}
+                      Needs{" "}
+                    </span>
+                    <br></br>Dedicated to providing comprehensive support
+                    services <br></br>
+                    <span className="h3">Strengthening Community</span>
+                  </p>
+                </div>
+                <Button color="primary" size="lg">
+                  Get Help Today
+                </Button>{" "}
+                <div className="hero-welcome-bio">
+                  <p className="mb-2 text-white">
+                    * *only availible to downlad via chrome browser
+                  </p>
+                </div>
               </div>
-              <Button color="primary" size="lg">Get Help Today</Button>{' '}
-
-
-              <div className="hero-welcome-bio">
-                <p className="mb-2 text-white">* *only availible to downlad via chrome browser</p>
-              </div>
-                  </div>
             </Col>
           </Row>
         </Container>
-        </div>
+      </div>
     </BaseLayout>
   );
 };

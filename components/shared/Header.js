@@ -91,8 +91,8 @@ const Header = ({ user, loading, className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  const menuOpenClass = isOpen ? 'menu-open' : 'menu-close';
-  
+  const menuOpenClass = isOpen ? "menu-open" : "menu-close";
+
   return (
     <ReactResizeDetector handleWidth>
       {({ width }) => (

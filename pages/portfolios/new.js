@@ -26,4 +26,4 @@ const PortfolioNew = ({ user, loading: userLoading }) => {
   );
 };
 
-export default PortfolioNew
+export default PortfolioNew;

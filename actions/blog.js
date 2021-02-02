@@ -13,7 +13,7 @@ export const useGetBlog = (id) => {
     id ? `/api/v1/blogs/${id}` : null,
     fetcher
   );
-  
+
   return { data, error, loading: !data && !error, ...rest };
 };
 

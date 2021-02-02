@@ -84,4 +84,4 @@ export async function getServerSideProps() {
   };
 }
 
-export default Portfolios;
+export default withAuth(Portfolios)("admin");
