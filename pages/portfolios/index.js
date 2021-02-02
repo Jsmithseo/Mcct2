@@ -8,6 +8,8 @@ import { useDeletePortfolio } from "@/actions/portfolios";
 import PortfolioApi from "@/lib/api/portfolios";
 import PortfolioCard from "@/components/PortfolioCard";
 import { isAuthorized } from "@/utils/auth0";
+import withAuth from "@/hoc/withAuth";
+
 
 const Portfolios = ({ portfolios: initialPortfolios }) => {
   const router = useRouter();
