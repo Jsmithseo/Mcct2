@@ -76,7 +76,7 @@ const Leadership = () => {
             <div className="left-side justify-content-center">
               <img
                 width="100%"
-                src="https://images.squarespace-cdn.com/content/v1/5ebaf8af593d7e00d9fda34c/1589424889858-02WGI5KERF5H3LZLV006/ke17ZwdGBToddI8pDm48kG6E2OWZRwBlbeokYOUL6KpZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwB8gR31QkEvV5Cnzs01oeB_kT3VSav0P2RK0WGwSxdiE41Z8N2AkAYi6v8kXrG5A4/mr+phil.jpg?format=260w"
+                src="https://images.squarespace-cdn.com/content/v1/5ebaf8af593d7e00d9fda34c/1611769881362-YKE6EPA10Z63JVE3VVV0/ke17ZwdGBToddI8pDm48kI1ocPkBK9b53koIRsZPNJxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIlY3f1Ho-eHOnvD7k4-ccL0f_ahG7Xu61MeWD36HkZe0KMshLAGzx4R3EDFOm1kBS/IMG_2406.JPG?format=260w"
               />
             </div>
           </Col>
