@@ -2,17 +2,15 @@ import React from "react";
 import { useGetUser } from "@/actions/user";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import BasePage from "@/components/BasePage";
+import ContactForm from "@/components/contact"
+
+
 import {
-  Button,
-  Form,
-  FormGroup,
-  Label,
-  Input,
   Row,
   Col,
-  FormFeedback,
   Container,
 } from "reactstrap";
+
 
 const Contact = () => {
   const { data, loading } = useGetUser();
@@ -34,64 +32,7 @@ const Contact = () => {
               </Col>
 
               <Col md="6">
-                <Form>
-                  <Row form>
-                    <Col md="6">
-                      <FormGroup>
-                        <Label>First Name</Label>
-                        <Input
-                          type="first name"
-                          name="firstName"
-                          id="firstName"
-                          placeholder="Joan"
-                        />
-                        <FormFeedback>
-                          Oh noes! that name is already taken
-                        </FormFeedback>
-                      </FormGroup>
-                    </Col>
-                    <Col md="6">
-                      <FormGroup>
-                        <Label>Last Name</Label>
-                        <Input
-                          type="last name"
-                          name="lastName"
-                          id="lastName"
-                          placeholder="Smith"
-                        />
-                      </FormGroup>
-                    </Col>
-                  </Row>
-
-                  <FormGroup>
-                    <Label>Email</Label>
-                    <Input
-                      type="email"
-                      name="email"
-                      id="Email"
-                      placeholder="Email Address"
-                    />
-                  </FormGroup>
-                  <FormGroup>
-                    <Label>Phone</Label>
-                    <Input
-                      type="phone"
-                      name="phone"
-                      id="phone"
-                      placeholder="510-555-5555"
-                    />
-                  </FormGroup>
-                  <FormGroup>
-                    <Label for="exampleText">Messege </Label>
-                    <Input
-                      type="textarea"
-                      name="text"
-                      id="text"
-                      placeholder="Enter your message"
-                    />
-                  </FormGroup>
-                  <Button>Submit </Button>
-                </Form>
+                <ContactForm/>
               </Col>
             </Row>
           </Container>
