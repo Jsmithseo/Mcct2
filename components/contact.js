@@ -44,7 +44,7 @@ const ContactForm = () => {
   const handleSubmit = event => {
     event.preventDefault()
     setStatus("PENDING")
-    fetch("@/pages/api/contact", {
+    fetch("@/pages/api/contact.js", {
       method: "POST",
       body: JSON.stringify(state),
     })
@@ -107,6 +107,26 @@ const ContactForm = () => {
             name="email"
             value={state.email}
             onChange={updateFieldValue("email")}
+          />
+        </label>
+        <label className={styles.label}>
+          Sbject
+          <input
+            className={styles.input}
+            type="text"
+            name="subject"
+            value={state.subject}
+            onChange={updateFieldValue("subject")}
+          />
+        </label>
+        <label className={styles.label}>
+          Body
+          <textarea
+            className={styles.input}
+
+            name="subject"
+            value={state.body}
+            onChange={updateFieldValue("body")}
           />
         </label>
         <button className={styles.button}>Send</button>

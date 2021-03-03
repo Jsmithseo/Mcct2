@@ -83,7 +83,7 @@ const Leadership = () => {
           <Col md="6">
             <h2 className={`title ${createFadeInClass()}`}>Phillip Logan</h2>
             <p className={`subsubTitle ${createFadeInClass()}`}>
-              Intake Supervisor
+              Director of Partnerships
             </p>
             <div className={`${createFadeInClass()}`}>
               <p>

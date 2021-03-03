@@ -39,14 +39,14 @@ const Index = () => {
             >
               <div className="hero-welcome-main">
                 <div className="hero-welcome-text">
-                  <h1 className="display-4 text-white">
-                    Marin County CO-OP Teams
-                  </h1>
+                  <h2 className="display-4 text-white">
+                    Marin County Cooperation Team
+                  </h2>
                   <p className="lead text-white font-weight-light">
                     {" "}
                     <span>
-                      We're here for your{" "}
-                      <Typed
+                    Dedicated to providing comprehensive support services {" "}
+                     <br></br> <Typed
                         loop
                         strings={ROLES}
                         typeSpeed={50}
@@ -57,10 +57,9 @@ const Index = () => {
                         className="self-typed"
                         cursorChar="|"
                       ></Typed>{" "}
-                      Needs{" "}
+                      {" "}
                     </span>
-                    <br></br>Dedicated to providing comprehensive support
-                    services <br></br>
+                    <br></br>
                     <span className="h3">Strengthening Community</span>
                   </p>
                 </div>
