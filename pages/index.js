@@ -3,6 +3,7 @@ import BaseLayout from "../components/layouts/BaseLayout";
 import { Container, Row, Col, Button } from "reactstrap";
 import Typed from "react-typed";
 import { useGetUser } from "@/actions/user";
+import { SocialIcon } from 'react-social-icons';
 
 const ROLES = [
   "College",
@@ -70,11 +71,19 @@ const Index = () => {
                   <p className="mb-2 text-white">
                     * *only availible to downlad via chrome browser
                   </p>
+                  <div className="socialIcons">
+                    <p>Follow Us</p>
+        <SocialIcon url="https://www.facebook.com/Marin-County-Cooperation-Teams-110632247349694/" network="facebook" bgColor="#438DCD" />
+        <SocialIcon url="https://instagram.com/marincountycooperationteam?igshid=1aqmiwepeowdr" network="instagram" bgColor="#438DCD" />
+
+
+        </div>
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
+ 
       </div>
     </BaseLayout>
   );
