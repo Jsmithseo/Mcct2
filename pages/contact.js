@@ -2,15 +2,9 @@ import React from "react";
 import { useGetUser } from "@/actions/user";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import BasePage from "@/components/BasePage";
-import ContactForm from "@/components/contact"
+import ContactForm from "@/components/contact";
 
-
-import {
-  Row,
-  Col,
-  Container,
-} from "reactstrap";
-
+import { Row, Col, Container } from "reactstrap";
 
 const Contact = () => {
   const { data, loading } = useGetUser();
@@ -32,7 +26,7 @@ const Contact = () => {
               </Col>
 
               <Col md="6">
-                <ContactForm/>
+                <ContactForm />
               </Col>
             </Row>
           </Container>

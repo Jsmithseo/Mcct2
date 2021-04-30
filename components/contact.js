@@ -1,7 +1,5 @@
-import React, { useReducer } from "react"
-import styles from "@/styles/form.module.css"
-
-
+import React, { useReducer } from "react";
+import styles from "@/styles/form.module.css";
 
 const INITAL_STATE = {
   name: ``,
@@ -9,55 +7,55 @@ const INITAL_STATE = {
   subject: ``,
   body: ``,
   status: `IDLE`,
-}
+};
 
 const reducer = (state, action) => {
   switch (action.type) {
     case "updateFieldValue":
-      return { ...state, [action.field]: action.value }
+      return { ...state, [action.field]: action.value };
 
     case "updatesStatus":
-      return { ...state, status: action.status }
+      return { ...state, status: action.status };
 
     case "reset":
 
     default:
-      return INITAL_STATE
+      return INITAL_STATE;
   }
-}
+};
 
 const ContactForm = () => {
-  const [state, dispatch] = useReducer(reducer, INITAL_STATE)
+  const [state, dispatch] = useReducer(reducer, INITAL_STATE);
 
-  const setStatus = status => dispatch({ type: "updatesStatus", status })
+  const setStatus = (status) => dispatch({ type: "updatesStatus", status });
 
-  console.log({ state })
+  console.log({ state });
 
-  const updateFieldValue = field => event => {
+  const updateFieldValue = (field) => (event) => {
     dispatch({
       type: "updateFieldValue",
       field,
       value: event.target.value,
-    })
-  }
+    });
+  };
 
-  const handleSubmit = event => {
-    event.preventDefault()
-    setStatus("PENDING")
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setStatus("PENDING");
     fetch("@/pages/api/contact.js", {
       method: "POST",
       body: JSON.stringify(state),
     })
-      .then(response => response.json())
-      .then(response => {
-        console.log(response)
-        setStatus("SUCCESS")
+      .then((response) => response.json())
+      .then((response) => {
+        console.log(response);
+        setStatus("SUCCESS");
       })
-      .catch(error => {
-        console.error(error)
-        setStatus("ERROR")
-      })
-  }
+      .catch((error) => {
+        console.error(error);
+        setStatus("ERROR");
+      });
+  };
 
   if (state.status === "SUCCESS") {
     return (
@@ -71,7 +69,7 @@ const ContactForm = () => {
           Reset
         </button>
       </p>
-    )
+    );
   }
 
   return (
@@ -123,7 +121,6 @@ const ContactForm = () => {
           Body
           <textarea
             className={styles.input}
-
             name="subject"
             value={state.body}
             onChange={updateFieldValue("body")}
@@ -132,7 +129,7 @@ const ContactForm = () => {
         <button className={styles.button}>Send</button>
       </form>
     </>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;

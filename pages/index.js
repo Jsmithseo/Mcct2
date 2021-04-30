@@ -3,7 +3,7 @@ import BaseLayout from "../components/layouts/BaseLayout";
 import { Container, Row, Col, Button } from "reactstrap";
 import Typed from "react-typed";
 import { useGetUser } from "@/actions/user";
-import { SocialIcon } from 'react-social-icons';
+import { SocialIcon } from "react-social-icons";
 
 const ROLES = [
   "College",
@@ -41,13 +41,14 @@ const Index = () => {
               <div className="hero-welcome-main">
                 <div className="hero-welcome-text">
                   <h2 className="display-4 text-white">
-                    Marin County Cooperation Team
+                    Marin County Cooperation Team App
                   </h2>
                   <p className="lead text-white font-weight-light">
                     {" "}
                     <span>
-                    Dedicated to providing comprehensive support services {" "}
-                     <br></br> <Typed
+                      Dedicated to providing comprehensive support services{" "}
+                      <br></br>{" "}
+                      <Typed
                         loop
                         strings={ROLES}
                         typeSpeed={50}
@@ -58,7 +59,6 @@ const Index = () => {
                         className="self-typed"
                         cursorChar="|"
                       ></Typed>{" "}
-                      {" "}
                     </span>
                     <br></br>
                     <span className="h3">Strengthening Community</span>
@@ -73,17 +73,22 @@ const Index = () => {
                   </p>
                   <div className="socialIcons">
                     <p>Follow Us</p>
-        <SocialIcon url="https://www.facebook.com/Marin-County-Cooperation-Teams-110632247349694/" network="facebook" bgColor="#438DCD" />
-        <SocialIcon url="https://instagram.com/marincountycooperationteam?igshid=1aqmiwepeowdr" network="instagram" bgColor="#438DCD" />
-
-
-        </div>
+                    <SocialIcon
+                      url="https://www.facebook.com/Marin-County-Cooperation-Teams-110632247349694/"
+                      network="facebook"
+                      bgColor="#438DCD"
+                    />
+                    <SocialIcon
+                      url="https://instagram.com/marincountycooperationteam?igshid=1aqmiwepeowdr"
+                      network="instagram"
+                      bgColor="#438DCD"
+                    />
+                  </div>
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
- 
       </div>
     </BaseLayout>
   );
